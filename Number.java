@@ -2,10 +2,10 @@ public class Number {
      int num1;
      int num2;
 
-   public Number() {
+    Number() {
         
     }
-    public Number(int num1, int num2) {
+     Number(int num1, int num2) {
 		System.out.println(num1);
 		System.out.println(num2);
 		}
@@ -33,24 +33,21 @@ public class Number {
   
         Number defaultNumber = new Number();
         System.out.println("Default Constructor:");
-        defaultNumber.displayNumbers();
-        System.out.println();
+        System.out.println(defaultNumber);
 
-      
-        Number intNumber = new Number(10, 20);
-        System.out.println("Constructor with two int parameters:");
-        intNumber.displayNumbers();
-        System.out.println();
+       System.out.println("Constructor with two int parameters:");
+	   Number intNumber = new Number(10, 20);
+        System.out.println(intNumber);
 
        
         Number doubleNumber = new Number(30.5, 40.8);
         System.out.println("Constructor with two double parameters:");
-        doubleNumber.displayNumbers();
-        System.out.println();
+        System.out.println(doubleNumber);
 
 
-        Number stringNumber = new Number("50", "60");
+        Number charNumber = new Number("s", "k");
         System.out.println("Constructor with two string parameters:");
-        stringNumber.displayNumbers();
+                System.out.println(charNumber);
+
     }
 }
