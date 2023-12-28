@@ -1,0 +1,4 @@
+public enum ChargingType{
+    USBC,MICROUSB,LIGHTINGCABLE,USBTOLIGHTING;
+
+}

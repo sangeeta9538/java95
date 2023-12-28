@@ -1,0 +1,3 @@
+public enum BatteryType{
+  LITHIUM,ALKALINE,SALTBASED,NICKELMETAL;
+}
