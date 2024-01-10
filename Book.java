@@ -20,7 +20,7 @@ public class Book{
    void printBookDetails(){
 	   
 	System.out.println("book name :" + bookName ); 
-    	System.out.println("no of pages :" + numberOfPages );   
+    System.out.println("no of pages :" + numberOfPages );   
 	System.out.println("author :" + author );   
 	System.out.println("price   :" + price );   
 	System.out.println("publishedYear :" + publishedYear );   
@@ -33,7 +33,7 @@ public class Book{
 		
 		
 		Book book1=new Book("coco", 250,"harry",500,2015, "West land" , "disney");
-				Book book2=new Book("deniss", 280,"harry",500,2015, "West land" , "disney");
+		Book book2=new Book("deniss", 280,"harry",500,2015, "West land" , "disney");
 		Book book3=new Book("memory", 250,"richi",500,2015, "West land" , "disney");
 		Book book4=new Book("hustle", 250,"joe",500,2015, "West land" , "disney");
 		Book book5=new Book("time to kill", 250,"franc",500,2015, "West land" , "disney");
@@ -41,7 +41,7 @@ public class Book{
 		Book book7=new Book("mindfullness", 250,"jonh",500,2015, "West land" , "disney");
 
 	book1.printBookDetails();
-		book2.printBookDetails();
+    book2.printBookDetails();
 	book3.printBookDetails();
 	book4.printBookDetails();
 	book5.printBookDetails();

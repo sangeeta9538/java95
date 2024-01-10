@@ -1,0 +1,53 @@
+public class Car {
+    // Car attributes
+    private String brandName;
+    private String colour;
+    private double price;
+    private double mileage;
+    private double engineCapacity;
+    private int noOfAirbags;
+    private int topSpeed;
+    private boolean havingAc;
+
+    // Constructor to initialize the Car attributes
+    public Car(String brandName, String colour, double price, double mileage, double engineCapacity,
+               int noOfAirbags, int topSpeed, boolean havingAc) {
+        this.brandName = brandName;
+        this.colour = colour;
+        this.price = price;
+        this.mileage = mileage;
+        this.engineCapacity = engineCapacity;
+        this.noOfAirbags = noOfAirbags;
+        this.topSpeed = topSpeed;
+        this.havingAc = havingAc;
+    }
+
+    // Method to display car details
+    public void displayCarDetails() {
+        System.out.println("Brand: " + brandName);
+        System.out.println("Colour: " + colour);
+        System.out.println("Price: $" + price);
+        System.out.println("Mileage: " + mileage + " km/l");
+        System.out.println("Engine Capacity: " + engineCapacity + " cc");
+        System.out.println("Number of Airbags: " + noOfAirbags);
+        System.out.println("Top Speed: " + topSpeed + " km/h");
+        System.out.println("AC: " + (havingAc ? "Yes" : "No"));
+        System.out.println("----------------------------");
+    }
+
+    public static void main(String[] args) {
+        // Creating 5 cars
+        Car car1 = new Car("Toyota", "Red", 25000.0, 15.5, 2000.0, 6, 180, true);
+        Car car2 = new Car("Honda", "Blue", 30000.0, 14.0, 1800.0, 4, 200, true);
+        Car car3 = new Car("Ford", "Black", 35000.0, 12.5, 2500.0, 8, 220, false);
+        Car car4 = new Car("Chevrolet", "White", 28000.0, 16.0, 1600.0, 5, 170, true);
+        Car car5 = new Car("BMW", "Silver", 50000.0, 10.5, 3000.0, 10, 250, true);
+
+        // Displaying details of each car
+        car1.displayCarDetails();
+        car2.displayCarDetails();
+        car3.displayCarDetails();
+        car4.displayCarDetails();
+        car5.displayCarDetails();
+    }
+}
